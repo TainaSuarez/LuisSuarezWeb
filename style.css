@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titulo principal */
+header h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Categorías */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Forma categorías */
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Espacio de categorías e imagen */
+.main-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Tamaño imagen grande */
+.main-image img {
+    width: 80%;
+}
+
+/* Redondos club */
+.image-menu {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-menu .menu-item {
+    text-align: center;
+    width: 50%;
+    border-radius: 50%;
+}
+
+/* Forma imagen */
+.image-menu img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Noticias */
+.news {
+    background-color: #000000;
+    margin: 4% 10%;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Ajusta según sea necesario */     
+}
+
+/* Ajusta el contenedor de noticias para alinear imagen y párrafo en línea con Grid */
+.news-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Imagen ocupa 1 parte, párrafo ocupa 2 partes */
+    gap: 10px; /* Espacio entre la imagen y el párrafo */
+    margin-bottom: 20px;
+}
+
+/* Reducción del tamaño de la imagen */
+.news-item img {
+    width: 100%; /* Ajusta según sea necesario */
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Párrafo alineado a la izquierda con flex: 1 para ocupar el espacio restante */
+.news-item p {
+    color: white;
+    text-align: left;
+    margin: 0;
+    /* No necesitas flex aquí, ya que Grid maneja la distribución */
+}
